@@ -2,7 +2,7 @@ import csv
 import json
 
 # Open the CSV file and read its contents
-with open('ASVS-4.0.3.csv', 'r') as csv_file:
+with open('ASVS-4.0.3.csv', 'r', encoding="utf8") as csv_file:
     reader = csv.DictReader(csv_file)
 
     # Convert each row into a dictionary and add it to a list

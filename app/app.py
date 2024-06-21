@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    with open('converter/ASVS-4.0.3.json', 'r') as f:
+    with open('converter/ASVS-4.0.3.json', 'r', encoding="utf8") as f:
         data = json.load(f)
     
     data.sort(key=lambda x: x['chapter_name'])
